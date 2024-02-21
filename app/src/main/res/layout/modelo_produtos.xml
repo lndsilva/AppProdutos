@@ -8,6 +8,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
         android:orientation="vertical">
 
         <ImageView
@@ -17,11 +19,14 @@
             android:src="#2c2c2c" />
 
         <TextView
-            android:layout_gravity="center_horizontal"
             android:id="@+id/txtDescrProduto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Prato" />
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5sp"
+            android:text="Prato"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
