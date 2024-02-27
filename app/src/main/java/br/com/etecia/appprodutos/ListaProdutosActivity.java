@@ -10,8 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ListaProdutosActivity extends AppCompatActivity {
-RecyclerView idRecViewProdutos;
-List<Produtos> listaProdutos;
+    RecyclerView idRecViewProdutos;
+    List<Produtos> listaProdutos;
 
 
     @Override
@@ -23,15 +23,45 @@ List<Produtos> listaProdutos;
 
         listaProdutos = new ArrayList<>();
         //lista de produtos
+        listaProdutos.add(
+                new Produtos("Tenis Rainha", R.drawable.tenis, 8, 350.00)
+        );
+        listaProdutos.add(
+                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
+        );
+        listaProdutos.add(
+                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
+        );
+        listaProdutos.add(
+                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
+        );
+        listaProdutos.add(
+                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
+        );
+        listaProdutos.add(
+                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
+        );
+        listaProdutos.add(
+                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
+        );
+        listaProdutos.add(
+                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
+        );
+        listaProdutos.add(
+                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
+        );
+        listaProdutos.add(
+                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
+        );
 
-        ProdutosAdapter adapter = new ProdutosAdapter(getApplicationContext(),listaProdutos);
 
-        idRecViewProdutos.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
+        ProdutosAdapter adapter = new ProdutosAdapter(getApplicationContext(), listaProdutos);
+
+        idRecViewProdutos.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
+
+        idRecViewProdutos.hasFixedSize();
 
         idRecViewProdutos.setAdapter(adapter);
-
-
-
 
 
     }
