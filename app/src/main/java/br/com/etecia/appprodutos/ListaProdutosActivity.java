@@ -22,37 +22,8 @@ public class ListaProdutosActivity extends AppCompatActivity {
         idRecViewProdutos = findViewById(R.id.idRecViewProdutos);
 
         listaProdutos = new ArrayList<>();
-        //lista de produtos
-        listaProdutos.add(
-                new Produtos("Tenis Rainha", R.drawable.tenis, 8, 350.00)
-        );
-        listaProdutos.add(
-                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
-        );
-        listaProdutos.add(
-                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
-        );
-        listaProdutos.add(
-                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
-        );
-        listaProdutos.add(
-                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
-        );
-        listaProdutos.add(
-                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
-        );
-        listaProdutos.add(
-                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
-        );
-        listaProdutos.add(
-                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
-        );
-        listaProdutos.add(
-                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
-        );
-        listaProdutos.add(
-                new Produtos("Bateria Elgin", R.drawable.bateria, 8, 1.00)
-        );
+
+        listaProdutos.add(new Produtos("Tenis",R.drawable.tenis,10,30));
 
 
         ProdutosAdapter adapter = new ProdutosAdapter(getApplicationContext(), listaProdutos);

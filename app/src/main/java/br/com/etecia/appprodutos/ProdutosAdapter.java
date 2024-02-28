@@ -30,12 +30,13 @@ public class ProdutosAdapter extends RecyclerView.Adapter<ProdutosAdapter.ViewHo
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         //instanciar o modelo para receber os dados
-        View view;
+        View v;
 
         LayoutInflater inflater = LayoutInflater.from(context);
-        view = inflater.inflate(R.layout.modelo_produtos, parent, false);
 
-        return new ViewHolder(view);
+        v = inflater.inflate(R.layout.modelo_produtos,parent,false);
+
+        return new ViewHolder(v);
     }
 
 
